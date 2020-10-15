@@ -21,7 +21,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: ['~/assets/styles/app.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -48,19 +48,20 @@ export default {
     '@nuxtjs/auth',
   ],
 
-    // PWA module configuration
-    pwa: {
-      // icon: {
-      //   source: './static/icon.png',
-      // },
-      manifest: {
-        name: 'MyVoc',
-        short_name: 'MyVoc',
-        lang: 'en',
-        display: 'fullscreen',
-      },
+  // PWA module configuration
+  pwa: {
+    icon: {
+      source: './static/icon.png',
     },
-  //Auth module configuration
+    manifest: {
+      name: 'MyVoc',
+      short_name: 'MyVoc',
+      lang: 'en',
+      display: 'fullscreen',
+      background_color: '#03A678',
+    },
+  },
+  // Auth module configuration
   auth: {
     strategies: {
       local: {
@@ -105,9 +106,9 @@ export default {
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
         },
-        light:{
-          primary:'#03A678'
-        }
+        light: {
+          primary: '#03A678',
+        },
       },
     },
   },
