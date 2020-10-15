@@ -13,10 +13,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.5"
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "nuxt": "^2.14.5",
+    "query-string": "^6.13.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
