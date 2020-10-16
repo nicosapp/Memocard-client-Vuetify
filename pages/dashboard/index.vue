@@ -12,7 +12,7 @@ export default {
   methods: {
     async send() {
       try {
-        await this.$axios.$post('auth/email/resend')
+        await this.$axios.$post('email/resend')
       } catch (e) {
         console.log(e)
       }
