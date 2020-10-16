@@ -125,7 +125,6 @@ export default {
       }
     },
   },
-  middleware: ['notAuth'],
   head() {
     return {
       title: 'Sign up',
