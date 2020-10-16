@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-bottom-navigation
+      v-if="$auth.loggedIn"
       v-model="active"
       grow
       app
@@ -8,9 +9,9 @@
       color="primary"
       :min-width="0"
     >
-      <v-btn value="home" @click="pushRoute('home', 'index')">
-        <div>Home</div>
-        <v-icon>mdi-home</v-icon>
+      <v-btn value="timeline" @click="pushRoute('timeline', 'timeline')">
+        <div>Words</div>
+        <v-icon>mdi-format-list-text</v-icon>
       </v-btn>
 
       <v-btn value="actions" @click="pushRoute('dashboard', 'actions')">

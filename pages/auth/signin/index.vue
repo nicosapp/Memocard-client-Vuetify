@@ -33,7 +33,7 @@
               class="d-flex justify-end"
               style="position: absolute; bottom: 0; right: 0"
             >
-              <nuxt-link to="/password/email">
+              <nuxt-link to="/password/reset">
                 Forgot your password ?
               </nuxt-link>
             </div>
@@ -100,8 +100,9 @@ export default {
         if (e.response.status === 422) {
           this.validation = e.response.data.errors
           this.$notifier.error({ message: 'There is an error in the form' })
+          return
         }
-        this.$notifier.error({ message: 'Sorry, login failed :(' })
+        this.$notifier.error500()
       }
     },
   },

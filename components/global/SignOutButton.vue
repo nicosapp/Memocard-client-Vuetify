@@ -1,5 +1,5 @@
 <template>
-  <v-btn @click.prevent="signOut">
+  <v-btn icon @click.prevent="signOut">
     <slot />
   </v-btn>
 </template>
