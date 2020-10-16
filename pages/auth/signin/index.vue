@@ -97,7 +97,7 @@ export default {
         this.$router.push({ name: 'dashboard' })
         this.validation = {}
       } catch (e) {
-        if (e.response.status === 422) {
+        if (e.response && e.response.status === 422) {
           this.validation = e.response.data.errors
           this.$notifier.error({ message: 'There is an error in the form' })
           return
