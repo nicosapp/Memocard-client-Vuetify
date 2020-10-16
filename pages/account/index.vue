@@ -201,6 +201,7 @@ export default {
   components: {
     AvatarUpload,
   },
+  layout: 'account',
   mixins: [validationRules],
   data() {
     return {

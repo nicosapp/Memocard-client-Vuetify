@@ -9,6 +9,9 @@
 
 <script>
 export default {
+  mounted() {
+    this.$store.dispatch('bottomBar/setActive', 'timeline')
+  },
   methods: {
     toast() {
       // this.$notifier.success({ message: 'Test' })
